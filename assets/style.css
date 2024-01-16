@@ -1,0 +1,177 @@
+/*
+*= require_tree .
+*= require_self
+
+
+*/
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+
+h1 {
+  text-align: center;
+}
+
+
+img {
+   max-width: 100%;
+   height: auto; 
+ }
+
+.center{
+    text-align: center;
+    
+  }
+*{
+      box-sizing: border-box;
+      margin: 0;
+    }
+    
+    
+    
+.link{
+      display: block;
+      text-align: center;
+      color: #777;
+      text-decoration: none;
+      padding: 10px;
+    }
+    
+.image-src {
+      padding: 16px;
+      width: 350px;
+      text-align: center;
+    }
+    
+    
+div.movie-card {
+    border: 1px solid #ddd;
+    float: left;
+    width: 400px;
+    height: 750px;
+    text-align: center;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    
+    }
+    
+div.movie-card a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    background-color: black;
+    padding: 8px;
+    margin: 0;
+    }
+    
+div.movie-card a:hover {
+    color: #ccc;
+    }
+.top-part{
+      text-align: center;
+    }
+body {
+        background-color: #fff;
+        color: #333;
+        
+        }
+      
+body, p, ol, ul, td {
+        font-family: verdana, arial, helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 18px; }
+      
+pre {
+        background-color: #eee;
+        padding: 10px;
+        font-size: 11px; }
+      
+a {
+        color: #000; }
+      
+a:visited {
+        color: #666; }
+      
+a:hover {
+        color: #fff;
+        background-color: #000; }
+      
+th {
+        padding-bottom: 5px; }
+      
+td {
+        padding: 0 5px 7px; 
+    }
+      
+div.field,
+div.actions {
+        margin-bottom: 10px; }
+      
+#notice {
+        color: green; }
+      
+.field_with_errors {
+        padding: 2px;
+        background-color: red;
+        display: table; }
+      
+#error_explanation {
+        width: 450px;
+        border: 2px solid red;
+        padding: 7px 7px 0;
+        margin-bottom: 20px;
+        background-color: #f0f0f0; }
+      
+#error_explanation h2 {
+        text-align: left;
+        font-weight: bold;
+        padding: 5px 5px 5px 15px;
+        font-size: 12px;
+        margin: -7px -7px 0;
+        background-color: #c00;
+        color: #fff; }
+      
+#error_explanation ul li {
+        font-size: 12px;
+        list-style: square; }
+      
+label {
+        display: block; }
+.image-src {
+            padding: 16px;
+            width: 350px;
+            text-align: center;
+          }
+      
+      
+div.product {
+          border: 1px solid #ddd;
+          float: left;
+          width: 400px;
+          height: 750px;
+          text-align: center;
+          margin-left: 100px;
+          margin-bottom: 30px;
+          margin-top: 50px;
+         
+      }
+        
+div.product a {
+         color: white;
+         text-decoration: none;
+         font-weight: bold;
+         display: block;
+         background-color: orangered;
+         padding: 8px;
+         margin: 0;
+        }
+      
+div.product a:hover {
+          color: #ccc;
+         }
+         
+.show-card{
+          text-align: center;
+         }
+ 
