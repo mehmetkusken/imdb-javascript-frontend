@@ -4,13 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <script src="./src/components/Dizi.js"></script>
+    <script src="./src/components/Modal.js"></script>
     <script src="./src/components/Movie.js"></script>
     <script src="./src/services/ApiService.js"></script>
     <script defer src="./src/index.js"></script>
-    <title>IMDB MOVIES and SERIES</title>
+    <title>imdb</title>
 </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
 </br></br>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-main"></div>
+    </div>
+
+</div>
 <div id="main"></div>
+
 </br></br>
 </body>
 </html>
