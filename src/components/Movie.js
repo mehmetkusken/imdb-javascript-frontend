@@ -77,19 +77,14 @@ class Movie {
     }
 
     static handleSubmit = (e) => {
-        
-        if(e.target.innerText === 'Add'){
-            console.log(e.target.dataset.movieid)
-        }
-       
 
-        e.preventDefault()        
+        e.preventDefault() 
+
         const addFavoriteList = {
+           movie_id:  e.target.dataset.movieid
            
-        
-           
-
         }
+        api.createFavoriteMovie(addFavoriteList).then(console.log)
 
     }
 
@@ -99,6 +94,7 @@ class Movie {
 
     static getMovies = () => {
         api.getMovies().then(movies => {
+            Movie.all = []
             movies.forEach(movie => new Movie(movie))
             this.renderIndex()
             

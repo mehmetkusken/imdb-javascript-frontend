@@ -146,35 +146,37 @@ label {
       
       
 div.product {
-          border: 1px solid #ddd;
-          float: left;
-          width: 400px;
-          height: 750px;
-          text-align: center;
-          margin-left: 100px;
-          margin-bottom: 30px;
-          margin-top: 50px;
+        border: 1px solid #ddd;
+        float: left;
+        width: 400px;
+        height: 750px;
+        text-align: center;
+        margin-left: 100px;
+        margin-bottom: 30px;
+        margin-top: 50px;
          
       }
         
-div.product a {
-         color: white;
-         text-decoration: none;
-         font-weight: bold;
-         display: block;
-         background-color: orangered;
-         padding: 8px;
-         margin: 0;
+product a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        background-color: black;
+        padding: 8px;
+        margin: 0;
         }
       
-div.product a:hover {
+.product a:hover {
           color: #ccc;
-         }
+        }
          
 .show-card{
           text-align: center;
          }
-         .modal {
+
+
+.modal {
                 display: none; /* Hidden by default */
                 position: fixed; /* Stay in place */
                 z-index: 1; /* Sit on top */
