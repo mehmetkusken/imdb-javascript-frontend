@@ -5,6 +5,7 @@ class Movie {
     constructor(data){
         this.data = data
         this.constructor.all.push(this)  
+        
     }
 
     renderCard = () => {
@@ -60,19 +61,13 @@ class Movie {
     
     }
 
-    
-
-
     static favoriteForm = (id) => {
         modal.main.innerHTML = `
         <form>
         <p>Do you want to add your favorite list this movie?</p>
         <button class="delete-bttn btn btn-sm btn-primary" data-movieid=${id}>Add</button>
-        
         </form>
-        `
-        
-        
+        ` 
         modal.main.querySelector('form').addEventListener('click', this.handleSubmit)
     }
 

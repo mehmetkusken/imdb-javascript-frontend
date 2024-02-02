@@ -32,10 +32,11 @@ class Navigation{
             Dizi.getDizis();
             document.querySelector('.container').classList.add('hidden');
             break;
-            //case 'favoriteMovie':
-            //heroImage.classList.remove('hidden');
-            //document.getElementById("theater").classList.add('hidden');
-            //break;
+            case 'favoriteMovie':
+            Favorite.getFavorites()
+            document.querySelector('.container').classList.add('hidden');
+            document.querySelector('.product').classList.add('hidden');
+            break;
             //case 'favoriteSerie':
             //heroImage.classList.remove('hidden');
             //document.getElementById("theater").classList.add('hidden');

@@ -12,6 +12,7 @@ function emailSubmit(e){
     if(email != undefined && email != null && email !=''){
      api.findOrCreateEmail(email).then(userData =>{
         user = userData
+        
        Movie.getMovies()
        
       })

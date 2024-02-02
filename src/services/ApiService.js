@@ -27,6 +27,8 @@ class ApiService {
         body: JSON.stringify(addFavoriteList),
         })
         .then(response => response.json())
+        .then(json => alert(json.message))
+        .then(json => Movie.getMovies())
      }
 
      createFavoriteDizi = (addFavoriteDiziList) => {
@@ -39,5 +41,20 @@ class ApiService {
       body: JSON.stringify(addFavoriteDiziList),
       })
       .then(response => response.json())
+      .then(json => Dizi.getDizis())
+   }
+
+   deleteFavoriteMovie = (id) => {
+     
+      fetch(this.api + '/favorites/' + id , {
+         method: 'DELETE' ,
+         headers: {
+            'Content-Type': 'application/json',
+         }
+      })
+      .then(resp => resp.json())
+      .then(json => alert(json.message))
+      .then(json => Favorite.getFavorites())
+      
    }
 }
