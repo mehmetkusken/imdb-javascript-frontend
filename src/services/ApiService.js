@@ -5,6 +5,7 @@ class ApiService {
     getMovies = () => fetch(this.api+"/movies").then(res => res.json());
     getDizis = () => fetch(this.api+"/dizis").then(res => res.json());
     getFavorites = () => fetch(this.api+"/favorites").then(res => res.json());
+    getFavoris = () => fetch(this.api+"/favoris").then(res => res.json());
 
     findOrCreateEmail = (email) => {
         return fetch(this.api + '/users',{
@@ -30,7 +31,7 @@ class ApiService {
         .then(json => alert(json.message))
         .then(json => Movie.getMovies())
      }
-
+     
      createFavoriteDizi = (addFavoriteDiziList) => {
       addFavoriteDiziList.user_id = user.id
       return fetch(this.api + '/favoris',{
@@ -41,6 +42,7 @@ class ApiService {
       body: JSON.stringify(addFavoriteDiziList),
       })
       .then(response => response.json())
+      .then(json => alert(json.message))
       .then(json => Dizi.getDizis())
    }
 
@@ -55,6 +57,20 @@ class ApiService {
       .then(resp => resp.json())
       .then(json => alert(json.message))
       .then(json => Favorite.getFavorites())
+      
+   }
+
+   deleteFavoriteDizi = (id) => {
+     
+      fetch(this.api + '/favoris/' + id , {
+         method: 'DELETE' ,
+         headers: {
+            'Content-Type': 'application/json',
+         }
+      })
+      .then(resp => resp.json())
+      .then(json => alert(json.message))
+      .then(json => Favori.getFavoris())
       
    }
 }

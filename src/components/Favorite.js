@@ -10,7 +10,7 @@ class Favorite {
 
     static renderIndex = () => {
         const movieContainer = document.createElement("div")
-        movieContainer.classList.add("container")
+        movieContainer.classList.add("containerFavorite")
         const main = document.getElementById("main")
         main.innerHTML = ""
         main.appendChild(movieContainer)
@@ -23,7 +23,7 @@ class Favorite {
         if(user.id === this.data.user.id){
         const {title , poster , year , genre , rating , plot } = this.data.movie
         const { id } = this.data
-        document.querySelector(".container").innerHTML += `
+        document.querySelector(".containerFavorite").innerHTML += `
         <div class="movie-card" data-id=${id}>
         <p class = "title">${id}. ${title}</p>
         <img src=${poster} class="image-src">

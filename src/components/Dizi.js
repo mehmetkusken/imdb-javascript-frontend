@@ -75,6 +75,7 @@ class Dizi {
         const addFavoriteDiziList = {
            dizi_id:  e.target.dataset.diziid
         }
+        api.createFavoriteDizi(addFavoriteDiziList).then(console.log)
     }
 
     static find = (id) => this.all.find(dizi => dizi.data.id == id)

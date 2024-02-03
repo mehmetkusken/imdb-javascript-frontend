@@ -145,7 +145,7 @@ label {
           }
       
       
-div.product {
+div.product , div.productFavori {
         border: 1px solid #ddd;
         float: left;
         width: 400px;
@@ -157,7 +157,7 @@ div.product {
          
       }
         
-product a {
+.product a , .productFavori a {
         color: white;
         text-decoration: none;
         font-weight: bold;
@@ -167,7 +167,7 @@ product a {
         margin: 0;
         }
       
-.product a:hover {
+.product a:hover , .productFavori a:hover {
           color: #ccc;
         }
          
