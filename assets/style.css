@@ -145,7 +145,7 @@ label {
           }
       
       
-div.product , div.productFavori {
+div.dizi-card , div.dizi-card, div.favori-card {
         border: 1px solid #ddd;
         float: left;
         width: 400px;
@@ -157,7 +157,7 @@ div.product , div.productFavori {
          
       }
         
-.product a , .productFavori a {
+.dizi-card a , .dizi-card a , .favori-card a{
         color: white;
         text-decoration: none;
         font-weight: bold;
@@ -167,7 +167,7 @@ div.product , div.productFavori {
         margin: 0;
         }
       
-.product a:hover , .productFavori a:hover {
+.dizi-card a:hover , .dizi-card a:hover, .favori-card {
           color: #ccc;
         }
          
